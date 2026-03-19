@@ -10,3 +10,6 @@ schema = StructType([
     StructField("age", IntegerType(), True)
 ])
 df = spark.createDataFrame(data, schema)
+
+df.info()
+df.withColumn("department")
